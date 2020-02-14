@@ -8,7 +8,7 @@ namespace Events
         {
             Console.WriteLine("Hello World!");
             Winkel w = new Winkel(); //publisher
-            Stockbeheer sb = new Stockbeheer(10); //subscriber
+            Stockbeheer sb = new Stockbeheer(); //subscriber
             sb.InitStock();
             w.Winkelverkoop += sb.OnWinkelverkoop;
 

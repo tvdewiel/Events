@@ -11,7 +11,7 @@ namespace Events
         private Dictionary<ProductType,int> stock;
         public event EventHandler<StockbeheerEventArgs> StockBestelling;
 
-        public Stockbeheer(int stock)
+        public Stockbeheer()
         {
             this.stock = new Dictionary<ProductType, int>();
         }
